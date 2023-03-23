@@ -20,12 +20,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.004" />
 
-
     <TextView
         android:id="@+id/nombre"
-        android:layout_width="60dp"
+        android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
         android:text="Nombre: "
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,104 +36,145 @@
         app:layout_constraintVertical_bias="0.124" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtNombre"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="example: Jhon Doe"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
-        app:layout_constraintStart_toEndOf="@+id/nombre"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/apellido"
-        android:layout_width="66dp"
+        android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
         android:text="Apellido: "
+        android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtApellido"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:id="@+id/etApellido"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="example: Armstrong"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
-        app:layout_constraintStart_toEndOf="@+id/apellido"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/apellido">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/carrera"
-        android:layout_width="56dp"
+        android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:layout_marginTop="20dp"
+        android:textAlignment="center"
         android:text="Carrera: "
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apellido"
+        app:layout_constraintTop_toBottomOf="@+id/etApellido"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtCarrera"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:id="@+id/etCarrera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="Example: 2023"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
-        app:layout_constraintStart_toEndOf="@+id/carrera"
-        app:layout_constraintTop_toBottomOf="@+id/txtApellido"
-        app:layout_constraintVertical_bias="0.002" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/carrera">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCarrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/año"
-        android:layout_width="56dp"
+        android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:layout_marginTop="20dp"
+        android:textAlignment="center"
         android:text="Año: "
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carrera"
+        app:layout_constraintTop_toBottomOf="@+id/etCarrera"
         app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtAño"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:id="@+id/etAño"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="Example: Software Ingeneering"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
-        app:layout_constraintStart_toEndOf="@+id/año"
-        app:layout_constraintTop_toBottomOf="@+id/txtCarrera"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/año">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAño"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnInsertar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
         android:text="Insertar"
         android:shadowColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAño"
+        app:layout_constraintTop_toBottomOf="@+id/etAño"
         app:layout_constraintVertical_bias="0.245" />
 </androidx.constraintlayout.widget.ConstraintLayout>
